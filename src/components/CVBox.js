@@ -5,7 +5,7 @@ import "../index.css";
 import {MailIcon} from "@heroicons/react/outline";
 import CVirene from "../assets/CVIreneVeglioEn17052022.pdf";
 import downloadpdf from "../icons/file.svg";
-import {useState} from "@types/react";
+import {useState} from "react";
 
 const curriculum = {
   name: "Irene Veglio",
@@ -16,7 +16,7 @@ const steps = [
   {
     id: 1,
     name: "Education",
-    description: "Scuola Media Statale, Montà (CN)",
+    description: "Scuola Media Statale, Monta' (CN)",
     href: "https://www.icmonta.edu.it/",
     status: "complete",
   },
@@ -78,7 +78,7 @@ export default function CVBox() {
     setIsOpen(true);
   }
   return (
-    <div>
+    <div  id="cvbox" >
       <div className="col-span-2 max-w-7xl mx-auto py-4 px-4 md:px-4">
         <div className="relative bg-gray-300 shadow-xl rounded-2xl">
           <div className="m-4 md:m-8 pt-10">
@@ -277,7 +277,7 @@ export default function CVBox() {
                     className="flex-shrink-0 w-8 h-8"
                     alt="logo"
                 />
-                <a href="../assets/CVIreneVeglioEn17052022.pdf" download="CVirene">
+                <a href={CVirene} download="CVirene.pdf" target='_blank'>
                   <span className="ml-3">cv irene veglio</span>
                 </a>
               </dd>

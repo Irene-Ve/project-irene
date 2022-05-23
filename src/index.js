@@ -2,14 +2,21 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import Generator from "./components/Generator";
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
-      {/*<Route exact path="/" component={App} /> */}
+      <Router>
+          <Routes>
+              <Route path="/" element={ <App />} />
+              <Route path="/generator" element={ <Generator />} />
+          </Routes>
+      </Router>
+
   </React.StrictMode>
 );
 

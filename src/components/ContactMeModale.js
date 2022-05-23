@@ -16,17 +16,15 @@
 */
 import { MailIcon } from "@heroicons/react/outline";
 import React from "react";
-import "../index.css";
-import {useState} from "@types/react";
 
 const contatto = {
   email: "irene.veglio@gmail.com",
 };
 
-export default function ContactMeModale(email) {
+export default function ContactMeModale() {
 
   return (
-    <div>
+    <div  id="contactme">
       <div className="max-w-7xl mx-auto py-4 px-4 md:py-12 md:px-4 ">
         <div className="relative bg-gray-300 shadow-xl rounded-2xl">
           <h2 className="sr-only">Contact me</h2>
