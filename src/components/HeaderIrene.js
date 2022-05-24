@@ -33,19 +33,16 @@ export default function HeaderIrene() {
 
       <Navbar/>
 
-      <div className="sfondoWintergreen">
-        <div className="max-w-5xl mx-auto px-8 py-2 sm:px-12">
-          <div className="-mt-12 sm:-mt-16 sm:flex sm:items-end sm:space-x-5">
-            <div className="flex rounded-full">
+      <div className=" sfondoWintergreen">
+        <div className="max-w-5xl mx-auto px-8 py-2 sm:px-12 pb-16">
+          <div className="absolute -mt-12 sm:-mt-16 sm:flex sm:items-end sm:space-x-5">
+            <div className="relative rounded-full">
               <img
                 className="h-24 w-24 rounded-full ring-4 ring-black shadow-2xl sm:h-32 sm:w-32"
                 src={profile.avatar}
                 alt=""
               />
             </div>
-          </div>
-          <div className="hidden sm:block md:hidden mt-6 min-w-0 flex-1">
-            <h3> ciao</h3>
           </div>
         </div>
       </div>

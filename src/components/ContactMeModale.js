@@ -105,7 +105,7 @@ export default function ContactMeModale() {
               </div>
 
               <div className="">
-                <h3 className="text-lg font-bold text-gray-200">
+                <h3 className="text-lg font-semibold text-gray-200">
                   About me
                 </h3>
                 <p className="mt-12 text-base text-gray-200 max-w-3xl">
@@ -119,7 +119,7 @@ export default function ContactMeModale() {
                   classes.
                 </p>
 
-                <h3 className="mt-12 text-lg font-bold text-gray-200">
+                <h3 className="mt-12 text-lg font-semibold text-gray-200">
                 Contact information
                 </h3>
                 <ul
@@ -202,7 +202,7 @@ export default function ContactMeModale() {
 
             {/* Contact form */}
             <div className="py-8 px-6 sm:px-10 xl:p-12">
-              <h3 className="text-lg font-bold text-gray-900">
+              <h3 className="text-lg font-semibold text-gray-900">
                 Send me a message
               </h3>
 

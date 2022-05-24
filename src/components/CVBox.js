@@ -116,10 +116,10 @@ export default function CVBox() {
                             </span>
                           </span>
                           <span className="ml-4 min-w-0 flex flex-col items-start  px-6 py-2 rounded-2xl hover:bg-gray-400">
-                            <span className="text-xs font-bold tracking-wide uppercase">
+                            <span className="text-xs md:text-sm font-bold tracking-wide uppercase">
                               {step.name}
                             </span>
-                            <span className="text-sm text-gray-600">
+                            <span className="text-sm md:text-md text-gray-600">
                               {step.description}
                             </span>
                           </span>
@@ -147,10 +147,10 @@ export default function CVBox() {
                             </span>
                           </span>
                           <span className="ml-4 min-w-0 flex flex-col items-start px-6 py-2 rounded-2xl hover:bg-gray-400">
-                            <span className="text-xs font-bold tracking-wide uppercase text-wintergreen">
+                            <span className="text-xs md:text-sm font-bold tracking-wide uppercase text-wintergreen">
                               {step.name}
                             </span>
-                            <span className="text-sm text-gray-600">
+                            <span className="text-sm md:text-md text-gray-600">
                               {step.description}
                             </span>
                           </span>
@@ -177,10 +177,10 @@ export default function CVBox() {
                             </span>
                           </span>
                           <span className="ml-4 min-w-0 flex flex-col items-start  px-6 py-2 rounded-2xl hover:bg-gray-400">
-                            <span className="text-xs font-bold tracking-wide uppercase text-gray-500">
+                            <span className="text-xs md:text-sm font-bold tracking-wide uppercase text-gray-500">
                               {step.name}
                             </span>
-                            <span className="text-sm text-gray-500">
+                            <span className="text-sm md:text-md text-gray-500">
                               {step.description}
                             </span>
                           </span>
@@ -267,8 +267,8 @@ export default function CVBox() {
             </div>
 
           <div className="">
-            <h3 className="text-lg font-bold text-white ">
-              Download my CV
+            <h3 className="text-lg font-semibold text-white ">
+              Download my CV for more info
             </h3>
             <dl className="mt-8 mx-12 space-y-6">
               <dd className="flex justify-center text-base text-yellow-300 py-2 rounded-full hover:font-bold hover:underline">
