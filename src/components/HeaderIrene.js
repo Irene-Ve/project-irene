@@ -51,9 +51,7 @@ export default function HeaderIrene() {
         <ContactMeModale className="md:col-span-1"/>
         <CVBox className="md:col-span-1"/>
       </div>
-
-      <Footer/>
-
+      <Footer className="bg-black"/>
     </div>
   );
 }
