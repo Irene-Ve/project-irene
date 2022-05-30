@@ -7,7 +7,6 @@ function App() {
     <div className="App">
         <div>
             <HeaderIrene/>
-
         </div>
     </div>
   );
