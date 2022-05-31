@@ -68,7 +68,7 @@ const flex = [
 const grid = [
   { id: 1, name: "grid-cols" } /* grid-cols-1,2,3,4,5,6,7,8,9,10,11,12, none */,
   { id: 2, name: "col-auto" } /* Grid Column Start/End */,
-  { id: 3, name: "col-span" } /* col-span-1,2,3,4,5,6,7,8,9,10,11,12, full */,
+  { id: 3, name: "col-span", values: ["1","2","3"] }, /* col-span-1,2,3,4,5,6,7,8,9,10,11,12, full */,
   {
     id: 4,
     name: "col-start",
@@ -241,7 +241,7 @@ const typography = [
     name: "whitespace",
   } /* whitespace-normal, nowrap, pre, pre-line, pre-wrap */,
   { id: 22, name: "break" } /* (Word Break) break-normal, words, all */,
-  { id: 22, name: "content" } /* content-none */,
+  { id: 23, name: "content" } /* content-none */,
 ];
 
 const background = [

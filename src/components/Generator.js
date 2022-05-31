@@ -28,7 +28,7 @@ export default function Generator() {
           })
 
   return (
-    <div id="generator">
+    <div >
       <Navbar />
       <div className="sfondoWintergreen">
         <div className="max-w-7xl mx-auto py-4 px-4 md:py-12 md:px-4 ">

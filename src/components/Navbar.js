@@ -7,7 +7,7 @@ import "../index.css";
 const navigation = [
     { name: 'About Me', href: '#contactme', current: false },
     { name: 'My Curriculum', href: '#cvbox', current: false },
-    { name: 'Tailwind Generator', href: '#generator', current: true },
+    { name: 'Tailwind Generator', href: '/generator', current: true },
     { name: 'Other', href: '#', current: false },
 ]
 
