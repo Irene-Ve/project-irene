@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import "../index.css";
 import CVBox from "./CVBox";
 import ContactMeModale from "./ContactMeModale";
-import TopNavBar from "./TopNavBar";
 import profilePic from "../assets/me-round2.jpg";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
@@ -26,12 +25,10 @@ const profile = {
 };
 
 export default function HeaderIrene() {
-  const [buttonPopUpMessage, setButtonPopUpMessage] = useState(false);
 
   return (
     <div>
-
-      <Navbar/>
+      <Navbar />
 
       <div className=" sfondoWintergreen">
         <div className="max-w-5xl mx-auto px-8 py-2 sm:px-12 pb-16">
@@ -48,10 +45,11 @@ export default function HeaderIrene() {
       </div>
 
       <div className="sfondoWintergreen pb-24 grid grid-cols-1 md:grid-cols-2">
-        <ContactMeModale className="md:col-span-1"/>
-        <CVBox className="md:col-span-1"/>
+        <ContactMeModale className="md:col-span-1" />
+        <CVBox className="md:col-span-1" />
       </div>
-      {/* <Footer/> */}
+
+      <Footer />
     </div>
   );
 }

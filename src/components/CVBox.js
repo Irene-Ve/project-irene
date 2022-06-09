@@ -45,7 +45,7 @@ const steps = [
   {
     id: 5,
     name: "Internship",
-    description: "Intern Front-End presso BeBraver s.r.l",
+    description: "Intern Front-End, BeBraver s.r.l",
     href: "https://www.braver.app/landing",
     status: "current",
   },
