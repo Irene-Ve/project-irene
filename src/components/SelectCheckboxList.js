@@ -8,18 +8,14 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-export default function SelectFromList({ sc, sv, setSV }) {
+export default function SelectFromList({ sc, sv, setSV}) {
   return (
     <div>
       <Listbox value={sv} onChange={setSV}>
         {({ open }) => (
           <>
-            <Listbox.Label className="block text-xs font-medium text-gray-500 pt-4">
-              Inserisci il valore desiderato
-            </Listbox.Label>
-
             <div className="mt-1 relative">
-              <Listbox.Button className="relative w-full bg-white border border-gray-300 rounded-md shadow-sm pl-3 pr-10 py-2 text-left cursor-default focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+              <Listbox.Button className="relative w-1/2 bg-white border border-gray-300 rounded-md shadow-sm pl-3 pr-10 py-2 text-left cursor-default focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
                 <span className="flex items-center">
                   <span className="ml-3 block truncate">{sc.name}</span>
                 </span>
@@ -48,7 +44,7 @@ export default function SelectFromList({ sc, sv, setSV }) {
                           "cursor-default select-none relative py-2 pl-3 pr-9"
                         )
                       }
-                      value={classe}
+                      value={classe.name}
                       /* classe sarebbe la proprietà scelta ("px-8") */
                     >
                       {({ sc, active }) => (

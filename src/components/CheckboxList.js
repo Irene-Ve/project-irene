@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import SelectCheckboxList from "./SelectCheckboxList"
+import SelectCheckboxList from "./SelectCheckboxList";
 
 const allClasses = [
   { id: 1, name: "padding" },
@@ -14,6 +14,9 @@ const allClasses = [
   { id: 10, name: "sizing" },
   { id: 11, name: "altro" },
 ];
+function classNames(...classes) {
+  return classes.filter(Boolean).join(" ");
+}
 
 export default function CheckboxList({ query, sv, setSV }) {
   return (
@@ -39,25 +42,32 @@ export default function CheckboxList({ query, sv, setSV }) {
               >
                 {sottoclasse.name} -
               </label>
-                <div>
-              {({ sottoclasse }) =>
-                sottoclasse.isText ? (
-                  <div>
-                    <input
-                      className="appearance-none w-1/6 ml-2 bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                      id="value-px"
-                      type="text"
-                      placeholder="24"
-                    />
-                  </div>
-                ) : (
-                  <div>
-                    <SelectCheckboxList sc={sottoclasse} sv={sv} setSV={setSV} />
-                  </div>
-                )
-              }
+
+              <div>
+                <div
+                  className={({ sottoclasse }) =>
+                    classNames(
+                      sottoclasse.isText === true
+                        ? "appearance-none w-1/6 ml-2 bg-gray-200 text-gray-700 border border-gray-200 rounded-xl py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                        : "hidden"
+                    )
+                  }
+                >
+                  <input  classname="w-1/4" id="value-px" type="text" placeholder="24" />
                 </div>
 
+                <div
+                  className={({ sottoclasse }) =>
+                    classNames(
+                      sottoclasse.isText === true
+                        ? "hidden"
+                        : "ml-2 bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                    )
+                  }
+                >
+                  <SelectCheckboxList sc={sottoclasse} sv={sv} setSV={setSV} />
+                </div>
+              </div>
             </div>
           </div>
         ))}

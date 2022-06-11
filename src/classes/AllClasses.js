@@ -1050,10 +1050,11 @@ export const flex = [
   },
 ];
 
-/* ok continuare ad aggiunger     isText: false, ...  */
+/* ok continuare ad aggiungere    isText: false, ...  */
 export const grid = [
   {
     id: 1,
+    isText: false,
     name: "grid-template-columns",
     values: [
       "grid-cols-1",
@@ -1073,6 +1074,7 @@ export const grid = [
   } /* columns */,
   {
     id: 2,
+    isText: false,
     name: "grid-column-span",
     values: [
       "col-auto",
@@ -1093,6 +1095,7 @@ export const grid = [
   },
   {
     id: 3,
+    isText: false,
     name: "grid-column-start",
     values: [
       "col-start-1",
@@ -1113,6 +1116,7 @@ export const grid = [
   },
   {
     id: 4,
+    isText: false,
     name: "grid-column-end",
     values: [
       "col-end-1",
@@ -1134,6 +1138,7 @@ export const grid = [
 
   {
     id: 6,
+    isText: false,
     name: "grid-template-rows",
     values: [
       "grid-rows-1",
@@ -1147,6 +1152,7 @@ export const grid = [
   } /* rows */,
   {
     id: 7,
+    isText: false,
     name: "grid-row-span",
     values: [
       "row-auto",
@@ -1161,6 +1167,7 @@ export const grid = [
   } /* Grid Row Start/End */,
   {
     id: 9,
+    isText: false,
     name: "grid-row-start",
     values: [
       "row-start-auto",
@@ -1176,6 +1183,7 @@ export const grid = [
   },
   {
     id: 10,
+    isText: false,
     name: "grid-row-end",
     values: [
       "row-end-auto",
@@ -1192,6 +1200,7 @@ export const grid = [
 
   {
     id: 11,
+    isText: false,
     name: "grid-auto-flow",
     values: [
       "grid-flow-row",
@@ -1202,6 +1211,7 @@ export const grid = [
   },
   {
     id: 12,
+    isText: false,
     name: "grid-auto-columns",
     values: [
       "auto-cols-auto",
@@ -1212,6 +1222,7 @@ export const grid = [
   },
   {
     id: 13,
+    isText: false,
     name: "grid-auto-rows",
     values: [
       "auto-rows-auto",
@@ -1224,6 +1235,7 @@ export const grid = [
   /* gap */
   {
     id: 14,
+    isText: true,
     name: "gap",
     values: [
       "gap-0",
@@ -1265,6 +1277,7 @@ export const grid = [
   },
   {
     id: 15,
+    isText: true,
     name: "gap-x",
     values: [
       "gap-x-0",
@@ -1306,6 +1319,7 @@ export const grid = [
   },
   {
     id: 16,
+    isText: true,
     name: "gap-y",
     values: [
       "gap-y-0",
@@ -1349,6 +1363,7 @@ export const grid = [
   /* order (grid) */
   {
     id: 17,
+    isText: true,
     name: "order",
     values: [
       "order-0",
@@ -1373,6 +1388,7 @@ export const grid = [
   /* justify content */
   {
     id: 19,
+    isText: false,
     name: "justify-content",
     values: [
       "justify-start",
@@ -1385,6 +1401,7 @@ export const grid = [
   },
   {
     id: 20,
+    isText: false,
     name: "justify-items",
     values: [
       "justify-items-start",
@@ -1395,6 +1412,7 @@ export const grid = [
   },
   {
     id: 21,
+    isText: false,
     name: "justify-self",
     values: [
       "justify-self-auto",
@@ -1408,6 +1426,7 @@ export const grid = [
   /* align content */
   {
     id: 22,
+    isText: false,
     name: "align-content",
     values: [
       "content-center",
@@ -1420,6 +1439,7 @@ export const grid = [
   },
   {
     id: 23,
+    isText: false,
     name: "align-items",
     values: [
       "items-center",
@@ -1431,6 +1451,7 @@ export const grid = [
   },
   {
     id: 24,
+    isText: false,
     name: "align-self",
     values: [
       "self-auto",
@@ -1445,6 +1466,7 @@ export const grid = [
   /* place content */
   {
     id: 25,
+    isText: false,
     name: "place-content",
     values: [
       "place-content-center",
@@ -1458,6 +1480,7 @@ export const grid = [
   },
   {
     id: 26,
+    isText: false,
     name: "place-items",
     values: [
       "place-items-start",
@@ -1468,6 +1491,7 @@ export const grid = [
   },
   {
     id: 27,
+    isText: false,
     name: "place-self",
     values: [
       "place-self-auto",
@@ -1484,12 +1508,18 @@ export const layout = [
   /* Layout (+ Typography + Backgrounds + Borders) */
   {
     id: 1,
+    isText: false,
     name: "aspect-ratio",
     values: ["aspect-auto", "aspect-square", "aspect-video"],
   },
-  { id: 2, name: "container", values: ["container"] },
+  { id: 2,
+    isText: false,
+    name: "container",
+    values: ["container"]
+  },
   {
     id: 3,
+    isText: true,
     name: "columns",
     values: [
       "columns-1",
@@ -1522,6 +1552,7 @@ export const layout = [
   },
   {
     id: 4,
+    isText: false,
     name: "break-after",
     values: [
       "break-after-auto",
@@ -1536,6 +1567,7 @@ export const layout = [
   },
   {
     id: 5,
+    isText: false,
     name: "break-before",
     values: [
       "break-before-auto",
@@ -1550,6 +1582,7 @@ export const layout = [
   },
   {
     id: 6,
+    isText: false,
     name: "break-inside",
     values: [
       "break-inside-auto",
@@ -1560,12 +1593,17 @@ export const layout = [
   },
   {
     id: 7,
+    isText: false,
     name: "box-decoration-break",
     values: ["box-decoration-clone", "box-decoration-slice"],
   },
-  { id: 8, name: "box-sizing", values: ["box-border", "box-content"] },
+  { id: 8, isText: false,
+    name: "box-sizing",
+    values: ["box-border", "box-content"]
+  },
   {
     id: 9,
+    isText: false,
     name: "display",
     values: [
       "block",
@@ -1593,17 +1631,21 @@ export const layout = [
   },
   {
     id: 10,
+    isText: false,
     name: "float",
     values: ["float-right", "float-left", "float-none"],
   },
   {
     id: 11,
+    isText: false,
     name: "clear",
     values: ["clear-right", "clear-left", "clear-none", "clear-both"],
   },
-  { id: 12, name: "isolation", values: ["isolate", "isolate-none"] },
+  { id: 12, isText: false,
+    name: "isolation", values: ["isolate", "isolate-none"] },
   {
     id: 13,
+    isText: false,
     ame: "object-fit",
     values: [
       "object-contain",
@@ -1615,6 +1657,7 @@ export const layout = [
   },
   {
     id: 14,
+    isText: false,
     ame: "object-position",
     values: [
       "object-bottom",
@@ -1629,6 +1672,7 @@ export const layout = [
   },
   {
     id: 15,
+    isText: false,
     name: "overflow",
     values: [
       "overflow-auto",
@@ -1650,6 +1694,7 @@ export const layout = [
   },
   {
     id: 16,
+    isText: false,
     name: "overscroll-behavior",
     values: [
       "overscroll-auto",
@@ -1665,11 +1710,13 @@ export const layout = [
   },
   {
     id: 17,
+    isText: false,
     name: "position",
     values: ["static", "fixed", "absolute", "relative", "sticky"],
   },
   {
     id: 18,
+    isText: false, /* qui potrebbe starci anche anche true... */
     name: "inset",
     values: [
       "inset-0",
@@ -1976,9 +2023,13 @@ export const layout = [
       "left-3/4",
     ],
   },
-  { id: 19, name: "visibility", values: ["visible", "invisible"] },
+  { id: 19,
+    isText: false,
+    name: "visibility",
+    values: ["visible", "invisible"] },
   {
     id: 20,
+    isText: false, /* anche true... */
     name: "z-index",
     values: ["z-0", "z-10", "z-20", "z-30", "z-40", "z-50", "z-auto"],
   },
@@ -1989,11 +2040,13 @@ export const typography = [
   /* Text / Font */
   {
     id: 1,
+    isText: false,
     name: "font-family",
     values: ["font-sans", "font-serif", "font-mono"],
   },
   {
     id: 2,
+    isText: false,
     name: "font-size",
     values: [
       "text-xs",
@@ -2013,12 +2066,14 @@ export const typography = [
   },
   {
     id: 3,
+    isText: false,
     name: "font-smoothing",
     values: ["antialiased", "subpixel-antialiased"],
   },
   { id: 4, name: "font-style", values: ["italic", "non-italic"] },
   {
     id: 5,
+    isText: false,
     name: "font-weigth",
     values: [
       "font-thin",
@@ -2034,6 +2089,7 @@ export const typography = [
   },
   {
     id: 6,
+    isText: false,
     name: "font-variant-numeric",
     values: [
       "normal-nums",
@@ -2050,6 +2106,7 @@ export const typography = [
 
   {
     id: 7,
+    isText: false,
     name: "tracking",
     values: [
       "tracking-tighter",
@@ -2062,6 +2119,7 @@ export const typography = [
   },
   {
     id: 8,
+    isText: false,
     name: "line-height",
     values: [
       "leading-3",
@@ -2082,22 +2140,26 @@ export const typography = [
   },
   {
     id: 9,
+    isText: false,
     name: "list-style-type",
     values: ["list-none", "list-disc", "list-decimal"],
   },
   {
     id: 10,
+    isText: false,
     name: "list-style-position",
     values: ["list-inside", "list-outside"],
   },
 
   {
     id: 11,
+    isText: false,
     name: "text-alignment",
     values: ["text-left", "text-center", "text-right", "text-justify"],
   },
   {
     id: 12,
+    isText: false, /* questa??? */
     name: "text-color",
     values: [
       "text-inherit",
@@ -2330,11 +2392,13 @@ export const typography = [
 
   {
     id: 13,
+    isText: false,
     name: "text-decoration",
     values: ["underline", "overline", "line-through", "no-underline"],
   },
   {
     id: 14,
+    isText: false,
     name: "text-decoration-color",
     values: [
       "decoration-inherit",
@@ -2566,6 +2630,7 @@ export const typography = [
   } /* (text decoration color) ho già messo TUTTO i colori disponibili */,
   {
     id: 15,
+    isText: false,
     name: "text-decoration-style",
     values: [
       "decoration-solid",
@@ -2577,6 +2642,7 @@ export const typography = [
   },
   {
     id: 16,
+    isText: false,
     name: "text-decoration-thickness",
     values: [
       "decoration-auto",
@@ -2591,6 +2657,7 @@ export const typography = [
 
   {
     id: 17,
+    isText: false,
     name: "text-underline-offset",
     values: [
       "underline-offset-auto",
@@ -2603,16 +2670,19 @@ export const typography = [
   },
   {
     id: 18,
+    isText: false,
     name: "text-transform",
     values: ["uppercase", "lowercase", "capitalize", "normal-case"],
   },
   {
     id: 19,
+    isText: false,
     name: "text-overflow",
     values: ["truncate", "text-ellipsis", "text-clip"],
   },
   {
     id: 20,
+    isText: true,
     name: "indent",
     values: [
       "indent-0",
@@ -2654,6 +2724,7 @@ export const typography = [
   },
   {
     id: 21,
+    isText: false,
     name: "vertical-alignment",
     values: [
       "align-baseline",
@@ -2668,6 +2739,7 @@ export const typography = [
   },
   {
     id: 22,
+    isText: false,
     name: "whitespace",
     values: [
       "whitespace-normal",
@@ -2679,21 +2751,28 @@ export const typography = [
   },
   {
     id: 23,
+    isText: false,
     name: "word-break",
     values: ["break-normal", "break-words", "break-all"],
   },
-  { id: 24, name: "content", values: ["content-none "] },
+  { id: 24,
+    isText: false,
+    name: "content",
+    values: ["content-none"]
+  },
 ];
 
 /* ok */
 export const background = [
   {
     id: 1,
+    isText: false,
     name: "bg-attachment",
     values: ["bg-fixed", "bg-local", "bg-scroll"],
   },
   {
     id: 2,
+    isText: false,
     name: "bg-clip",
     values: [
       "bg-clip-border",
@@ -2704,6 +2783,7 @@ export const background = [
   },
   {
     id: 3,
+    isText: false,
     name: "bg-color",
     values: [
       "bg-inherit",
@@ -2945,16 +3025,19 @@ export const background = [
   },
   {
     id: 4,
+    isText: false, /* deve essere attaccato al id=3 */
     name: "bg-opacity",
     values: ["/50", "/75", "/100"],
   } /* bg-gray-400/50   --->   /100 /75 /50 */,
   {
     id: 5,
+    isText: false,
     name: "bg-origin",
     values: ["bg-origin-border", "bg-origin-padding", "bg-origin-content"],
   },
   {
     id: 6,
+    isText: false,
     name: "bg-position",
     values: [
       "bg-bottom",
@@ -2970,6 +3053,7 @@ export const background = [
   },
   {
     id: 7,
+    isText: false,
     name: "bg-repeat",
     values: [
       "bg-repeat",
@@ -2982,6 +3066,7 @@ export const background = [
   },
   {
     id: 8,
+    isText: false,
     name: "bg-image",
     values: [
       "bg-none",
@@ -2997,6 +3082,7 @@ export const background = [
   } /* Background Image a cui va aggiunto from-purple-500 to-pink-500 */,
   {
     id: 9,
+    isText: false,
     name: "gradient-color-stops",
     values: [
       "from-inherit",
@@ -3025,6 +3111,7 @@ export const background = [
 export const border = [
   {
     id: 1,
+    isText: false,
     name: "border-radius",
     values: [
       "rounded-non",

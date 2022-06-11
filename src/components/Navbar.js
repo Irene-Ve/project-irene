@@ -7,7 +7,7 @@ import "../index.css";
 const navigation = [
     { name: 'About Me', href: '#contactme', current: false },
     { name: 'My Curriculum', href: '#cvbox', current: false },
-    { name: 'Tailwind Generator', href: '/generator', current: true },
+    { name: 'Tailwind Generator', href: 'http://localhost:3000/generator', current: true },/* dopo la production: 'https://project-irene-35076.web.app/generator'  */
     { name: 'Other', href: '#', current: false },
 ]
 
